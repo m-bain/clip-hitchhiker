@@ -23,7 +23,7 @@ query_scoring.py contains `def similarity_queryscoring` function which is the pr
 Run query-scoring method with CLIP on MSR-VTT text-to-video retrieval.
 N.B.: Downloads 6GB MSR-VTT videos to ./data
 
-`python run_msr_retrieval --num_frames 16`
+`python run_msr_retrieval.py --num_frames 16`
 
 you can play around with different temperature values (tau), when temperature << 1, it approximates max, when temperature >> 1 it approximates mean-pooling.
 
