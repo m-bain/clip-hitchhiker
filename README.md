@@ -25,7 +25,7 @@ N.B.: Downloads 6GB MSR-VTT videos to ./data
 
 `python run_msr_retrieval.py --num_frames 16`
 
-you can play around with different temperature values (tau), when temperature << 1, it approximates max, when temperature >> 1 it approximates mean-pooling.
+you can play around with different temperature values (tau), when temperature << 1, it approximates argmax, when temperature >> 1 it approximates uniform mean-pooling.
 
 for best results, use 120 frames (takes longer, and needs more RAM, chunking required)
 `python run_msr_retrieval --num_frames 120 --batch_size 1 --num_workers 1`
