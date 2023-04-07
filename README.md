@@ -16,7 +16,7 @@ $ pip install pandas numpy decord
 $ pip install git+https://github.com/openai/CLIP.git
 ```
 ### Method
-query_scoring.py contains `def similarity_queryscoring` function which is the proposed method.
+query_scoring.py contains `def similarity_queryscoring` function which is the proposed method in the paper.
 
 
 ### Zero-shot eval
@@ -33,10 +33,12 @@ for best results, use 120 frames (takes longer, and needs more RAM, chunking req
 expected results 16 frames:
 
 ```
-{'R1': 34.5, 'R5': 56.1, 'R10': 65.3, 'R50': 85.5, 'MedR': 4.0, 'MeanR': 37.604} agg: mean-pooling, temp:
-{'R1': 33.4, 'R5': 55.0, 'R10': 65.1, 'R50': 84.7, 'MedR': 4.0, 'MeanR': 38.393} agg: query-scoring, temp: 0.1
+{'R1': 33.3, 'R5': 55.0, 'R10': 65.2, 'R50': 84.8, 'MedR': 4.0, 'MeanR': 38.403}  agg: mean-pooling
+{'R1': 34.4, 'R5': 56.1, 'R10': 65.3, 'R50': 85.5, 'MedR': 4.0, 'MeanR': 37.602}  agg: query-scoring, temp: 0.1
 ```
 
+### Finetuning
+We do not provide finetuning code, however the query_scoring function can be plugged into the loss function when calculating Video-Text Contrastive loss.
 
 
 ### Citation
