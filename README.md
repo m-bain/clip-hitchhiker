@@ -1,10 +1,10 @@
-# A Clip-Hitchhiker's Guide to Long Video Retrieval
+# The Clip-Hitchhiker's Guide to Long Video Retrieval
 
 Implementation of query-scoring in the [Clip-Hitchhiker](https://arxiv.org/abs/2205.08508) technical report, Bain et al., Arxiv 2022.
 
 
-*N.B.: This paper was unfortunately rejected from ECCV 2022, and we decided not to re-submit and instead work on other things. Nonetheless, I release the code and ArXiv paper, in case you might find some of the ideas and code in the work useful.*
-
+*N.B.:
+This paper remains as an ArXiV paper after being rejected from ECCV 2022 due to "lack of novelty". I decided against a resubmission with added "novelties" just to hope to satisfy R2's concerns. Nonetheless, here I humbly present this work in its original form and the corresponding code, in case this reader might find it useful in their research endeavours, as others have.*
 
 ### Install
 
